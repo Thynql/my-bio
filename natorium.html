@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Thynql</title>
+  <meta name="description" content="Thynql — Developer Portfolio">
+  <meta property="og:title" content="Thynql">
+  <meta property="og:url" content="https://thynql.dev">
+  <meta property="og:image" content="https://avatars.githubusercontent.com/u/234709399?v=4">
+  <meta property="og:description" content="Thynql's Website">
+  <style>
+    :root {
+      --ui-font: "Apple SD Gothic Neo Thin", "Hiragino Kaku Gothic ProN",
+        "Hiragino Sans", "Yu Gothic", "Meiryo", "Noto Sans JP",
+        system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    }
+
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      min-height: 100vh;
+      font-family: var(--ui-font);
+      font-weight: 100;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    body {
+      background-image: url('bg.png');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 1;
+      }
+    }
+
+    .glass-con {
+      padding: 20px;
+    }
+
+    .glass-box {
+      background: rgba(0, 0, 0, 0.35);
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border-radius: 20px;
+      padding: 70px;
+      text-align: center;
+      max-width: 400px;
+    }
+
+    @media (max-width: 600px) {
+      .glass-box {
+        padding: 30px;
+        width: 85%;
+      }
+    }
+
+    .glass-box h1 {
+      font-weight: bold;
+      color: #fff;
+      line-height: 1.6;
+    }
+
+    .glass-box h2,
+    .glass-box h3 {
+      color: #fff;
+      line-height: 1.2;
+    }
+
+    .circleicon {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .discord {
+      background: transparent;
+      border: 1px solid rgba(255, 255, 255, 0.6);
+      border-radius: 20px;
+      padding: 0px;
+      width: 100%;
+      display: flex;
+      max-width: 700px;
+      text-align: center;
+      color: #fff;
+      align-items: center;
+      gap: 10px;
+      margin: 0 auto;
+      justify-content: center;
+    }
+
+    .discord img {
+      width: 100%;
+      border-radius: 15px;
+      object-fit: cover;
+    }
+
+    .github-icon,
+    .discord-icon {
+      width: 50px;
+      height: 50px;
+      margin: 15px 8px 0;
+      transition: transform 0.2s ease, filter 0.3s ease;
+      filter: brightness(0) invert(1);
+    }
+
+    .github-icon:hover,
+    .discord-icon:hover {
+      transform: scale(1.1);
+      filter: brightness(1.2) invert(1);
+    }
+
+    .icon-container {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="glass-con">
+    <div class="glass-box">
+      <img src="https://avatars.githubusercontent.com/u/234709399?v=4" alt="Thynql" class="circleicon">
+      <h1>Thynql</h1>
+      <h3>I am a Developer</h3>
+
+      <div class="discord">
+        <img src="https://discord.c99.nl/widget/theme-4/1434326317935104192.png" alt="Discord Info">
+      </div>
+
+      <div class="icon-container">
+        <a href="https://github.com/Thynql" target="_blank">
+          <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub" class="github-icon">
+        </a>
+        <a href="https://discord.com/users/1434326317935104192" target="_blank">
+          <img src="discord.svg" alt="Discord" class="discord-icon">
+        </a>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>

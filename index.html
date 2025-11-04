@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Thynql</title>
+  <meta property="og:title" content="Thynql">
+  <meta property="og:url" content="https://thynql.dev">
+  <meta property="og:image" content="https://avatars.githubusercontent.com/u/234709399?v=4">
+  <meta property="og:description" content="Thynql's Website">
+  <style>
+    :root {
+      --ui-font: "Apple SD Gothic Neo Thin", "Hiragino Kaku Gothic ProN",
+        "Hiragino Sans", "Yu Gothic", "Meiryo", "Noto Sans JP",
+        system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    }
+
+    body {
+      background-image: url('bg.png');
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+      font-family: var(--ui-font);
+      font-weight: 100;
+    }
+
+    .glass-con {
+      padding: 20px;
+    }
+
+    .glass-box {
+      background: rgba(0, 0, 0, 0.4);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      border-radius: 20px;
+      padding: 70px;
+      text-align: center;
+      max-width: 400px;
+    }
+
+    .glass-box h1 {
+      font-weight: bold;
+      color: #fff;
+      line-height: 1.6;
+    }
+
+    .glass-box h2,
+    .glass-box h3 {
+      color: #fff;
+      line-height: 1.2;
+    }
+
+    .circleicon {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .discord {
+      background: transparent;
+      border: 1px solid rgba(255, 255, 255, 0.6);
+      border-radius: 20px;
+      padding: 0px;
+      width: 100%;
+      display: flex;
+      max-width: 700px;
+      text-align: center;
+      color: #fff;
+      align-items: center;
+      gap: 10px;
+      margin: 0 auto;
+      justify-content: center;
+    }
+
+    .discord img {
+      max-width: 100%;
+      height: 100%;
+      width: 100%;
+      margin: auto;
+      border-radius: 10px;
+    }
+
+    .github-icon {
+      width: 50px;
+      height: 50px;
+      margin-top: 15px;
+      margin: 15px 8px 0;
+      transition: transform 0.2s;
+      filter: brightness(0) invert(1);
+    }
+
+
+    .github-icon:hover {
+      transform: scale(1.1);
+    }
+
+    .discord-icon {
+      width: 50px;
+      height: 50px;
+      margin-top: 15px;
+      margin: 15px 8px 0;
+      transition: transform 0.2s;
+      filter: brightness(0) invert(1);
+    }
+
+
+    .discord-icon:hover {
+      transform: scale(1.1);
+    }
+
+    .cp {
+      position: fixed;
+      bottom: 10px;
+      width: 100%;
+      text-align: center;
+      color: #000000;
+      font-size: 14px;
+    }
+
+    .attribution {
+      position: fixed;
+      left: 0;
+      right: 0;
+      bottom: 8px;
+      text-align: center;
+      font-size: 12px;
+      color: rgba(255, 255, 255, 0.85);
+      background: linear-gradient(transparent, rgba(0, 0, 0, 0.15));
+      padding: 4px 8px;
+      pointer-events: auto;
+    }
+
+    .attribution a {
+      color: rgba(255, 255, 255, 0.85);
+      text-decoration: underline;
+    }
+
+    .attribution small {
+      color: rgba(255, 255, 255, 0.7);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="glass-con">
+    <div class="glass-box">
+      <img src="https://avatars.githubusercontent.com/u/234709399?v=4" alt="Thynql" class="circleicon">
+      <h1 class="bold">Thynql</h1>
+      <h3>I am a Developer</h3>
+      <div class="discord">
+        <img src="https://discord.c99.nl/widget/theme-4/1434326317935104192.png" alt="Discord Info">
+      </div>
+      <span>
+        <a href="https://github.com/Thynql" target="_blank">
+          <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub" class="github-icon">
+        </a>
+      </span>
+
+      <span>
+        <a href="https://discord.com/users/1434326317935104192" target="_blank">
+          <img src="discord.svg" alt="Discord" class="discord-icon">
+        </a>
+      </span>
+    </div>
+  </div>
+</body>
+
+</html>
